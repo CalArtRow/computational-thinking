@@ -1,0 +1,293 @@
+/* General Styles */
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'DM SANS', 'Roboto Mono', monospace;
+    color: black;
+}    
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+hr {
+    width: 80%;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 3vw;
+    letter-spacing: .1em;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    padding: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+    box-shadow: #598392 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, #598392 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px;
+}
+
+h4 {
+    width: 100%;
+    text-decoration: underline;
+}
+
+section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p   {
+    text-align: justify;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px; 
+    width: 100%;
+}
+
+blockquote {
+    text-align: center;
+    padding: 20px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center; 
+    padding: 5px 0px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: smaller;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+cite {
+    text-align: center;
+}
+
+footer {
+    font-size: small;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: grey;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*------------------------*/
+
+/* Utility classes */
+
+.attribution {
+    color: rgb(3, 3, 83);
+}
+
+.attribution:hover {
+    text-decoration: underline;
+}
+
+.reference {
+    text-align: left;
+    width: 100%;
+    overflow: auto;
+}
+
+.in-text-hyperlink {
+    color: blue;
+}
+
+.in-text-hyperlink:hover {
+    text-decoration: underline;
+}
+
+/*------------------------*/
+
+/* Header and sitewide navigation */
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center; 
+}
+
+.nav-list {
+    padding-inline: 3em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+}
+
+.nav-list:hover {
+    font-weight: bold;
+}
+
+.active-nav {
+    font-size: larger;
+}
+
+.backtop {
+    color: grey;
+    text-align: center;
+    font-size: smaller;
+    margin-top: 3%;
+}
+
+.backtop:hover {
+    color: black;
+    text-decoration: underline;
+
+}
+/*------------------------*/
+
+
+/* Landing page specific */
+
+.landing-container {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.landing-image {
+    width: 33%;
+    position: relative;
+    min-width: 250px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0em; 
+    overflow: hidden;
+    background-color: #a3a3a859;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-content: stretch;
+    font-size: 2rem; 
+  }  
+
+.overlay-title {
+    max-width: 400px;
+    padding-top: 2rem;
+    padding-left: 5px;
+}
+
+.landing-image:hover .overlay {
+    height: 100%;
+  }
+/*------------------------*/
+
+/* Intro page specific */
+
+.ct-container {
+    display: flex;
+    flex-wrap: wrap;  
+    align-content: center;  
+    justify-content: space-evenly; 
+    width: 100%;
+    max-width: 800px; 
+    padding: 1em 0em;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.ct-shape {
+    color: white;
+    border-radius: 10%;
+    background-color: #598392;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    height: 100px;
+    width: 20%;
+    min-width: 160px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0.5em;
+}
+/*------------------------*/
+
+
+/* Biography page specific */
+
+#babbage-head {
+    width: 50%;
+    max-height: 500px;
+    max-width: 420px;
+    padding: 30px 0px 20px 20px;
+    min-width: 150px;
+}
+
+.biography-images {
+    max-width: 700px;
+}
+/*------------------------*/
+
+
+/* Responsive - specific resolutions */
+
+@media screen and (max-width: 900px) {
+    .landing-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    footer {
+        margin: 0%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-list{
+        font-size: small;
+        line-height: 200%;
+    }
+}
+    
